@@ -13,6 +13,32 @@
 </p>
 
 ---
+Build status for the main repositories:
+
+
+<p align="center">
+
+[![Build and Test Vehicle Service](https://github.com/TechTorque-2025/Vehicle_Service/actions/workflows/buildtest.yaml/badge.svg)](https://github.com/TechTorque-2025/Vehicle_Service/actions/workflows/buildtest.yaml)
+
+[![Build and Test Time Logging Service](https://github.com/TechTorque-2025/Time_Logging_Service/actions/workflows/buildtest.yaml/badge.svg)](https://github.com/TechTorque-2025/Time_Logging_Service/actions/workflows/buildtest.yaml)
+
+[![Build and Test Project Service](https://github.com/TechTorque-2025/Project_Service/actions/workflows/buildtest.yaml/badge.svg)](https://github.com/TechTorque-2025/Project_Service/actions/workflows/buildtest.yaml)
+
+[![Build and Test Payment Service](https://github.com/TechTorque-2025/Payment_Service/actions/workflows/buildtest.yaml/badge.svg)](https://github.com/TechTorque-2025/Payment_Service/actions/workflows/buildtest.yaml)
+
+[![Build and Test Authentication Service](https://github.com/TechTorque-2025/Authentication/actions/workflows/buildtest.yaml/badge.svg)](https://github.com/TechTorque-2025/Authentication/actions/workflows/buildtest.yaml)
+
+[![Build and Test Appointment Service](https://github.com/TechTorque-2025/Appointment_Service/actions/workflows/buildtest.yaml/badge.svg)](https://github.com/TechTorque-2025/Appointment_Service/actions/workflows/buildtest.yaml)
+
+[![Build and Test Admin Service](https://github.com/TechTorque-2025/Admin_Service/actions/workflows/buildtest.yaml/badge.svg)](https://github.com/TechTorque-2025/Admin_Service/actions/workflows/buildtest.yaml)
+
+[![Build and Test API Gateway](https://github.com/TechTorque-2025/API_Gateway/actions/workflows/buildtest.yaml/badge.svg)](https://github.com/TechTorque-2025/API_Gateway/actions/workflows/buildtest.yaml)
+
+[![Build and Test Frontend_Web](https://github.com/TechTorque-2025/Frontend_Web/actions/workflows/buildtest.yaml/badge.svg)](https://github.com/TechTorque-2025/Frontend_Web/actions/workflows/buildtest.yaml)
+
+</p>
+
+---
 
 ### Technology Stack
 
