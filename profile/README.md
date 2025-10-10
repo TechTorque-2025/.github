@@ -35,6 +35,8 @@ This project is a modern, enterprise-grade web application designed to digitize 
 
 ## 🏛️ System Architecture
 
+![Architecture Diagram](Architecture.png)
+
 The project is built on a **polyglot microservices architecture**. This design provides scalability, resilience, and technological flexibility, allowing each component to use the best tool for its specific job.
 
 -   **💻 Frontend Web App:** A [Next.js](https://nextjs.org/) and TypeScript application serving both customers and employees.
@@ -81,6 +83,23 @@ This command will build, create, and start all containers.
 ## 🧩 Repository Structure
 
 Each major component of the system resides in its own top-level directory. Please refer to the `README.md` file within each directory for specific details about that service.
+
+
+### 🧑‍💻 Development Team
+
+| Name | Role | GitHub |
+|---|---|---|
+| Randitha (B.H.A.R. Kulasekera) | Group Leader / Project Architect / Full Stack Developer / DevOps | [RandithaK](https://github.com/RandithaK) |
+| Suweka | Full Stack Developer | [Suweka](https://github.com/Suweka) |
+| Akith | Full Stack Developer | [Akith-002](https://github.com/Akith-002) |
+| Pramudi | Full Stack Developer | [Pramudi02](https://github.com/Pramudi02) |
+| Aditha | Full Stack Developer | [AdithaBuwaneka](https://github.com/AdithaBuwaneka) |
+| Chamodi | Full Stack Developer | [ChamodiSandunika](https://github.com/ChamodiSandunika) |
+| Dhanuja | Full Stack Developer / Project Manager | [Dhanuja416](https://github.com/Dhanuja416) |
+| Mahesh | Full Stack Developer | [TharinduMahesh](https://github.com/TharinduMahesh) |
+| Rothila | Full Stack Developer / Frontend Designer | [mehara-rothila](https://github.com/mehara-rothila) |
+| Dinith | Full Stack Developer | [DinithEdirisinghe](https://github.com/DinithEdirisinghe) |
+
 
 ---
 © 2025 TechTorque
