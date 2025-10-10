@@ -6,32 +6,56 @@
   <strong>The future of automobile service and appointment management.</strong>
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Project%20Status-Active%20Development-success?style=for-the-badge" alt="Project Status"/>
+  <img src="https://img.shields.io/badge/Version-v1.0%20(Scaffolded)-blue?style=for-the-badge" alt="Version"/>
+  <img src="https://img.shields.io/badge/Assignment-Enterprise%20Application%20Development-lightgrey?style=for-the-badge" alt="Assignment"/>
+</p>
+
 ---
 
-Welcome to the central repository for the **TechTorque 2025** project. This project is a modern, enterprise-grade web application designed to digitize and streamline the operations of an automobile service company.
+### Technology Stack
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white" alt="Spring Boot"/>
+  <img src="https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white" alt="Go"/>
+  <img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js"/>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
+  <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB"/>
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
+  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes"/>
+</p>
+
+---
+
+Welcome to the central repository for the **TechTorque 2025** project. 
+
+This project is a modern, enterprise-grade web application designed to digitize and streamline the operations of an automobile service company.
 
 ## 🏛️ System Architecture
 
 The project is built on a **polyglot microservices architecture**. This design provides scalability, resilience, and technological flexibility, allowing each component to use the best tool for its specific job.
 
--   **💻 Frontend Web App:** A Next.js and TypeScript application serving both customers and employees.
+-   **💻 Frontend Web App:** A [Next.js](https://nextjs.org/) and TypeScript application serving both customers and employees.
 -   **🌐 API Gateway:** A single entry point written in Go, responsible for routing, authentication (JWT validation), and rate limiting.
--   **⚙️ Backend Microservices:** A suite of 7+ independent Spring Boot services, each with its own dedicated PostgreSQL database.
--   **🗄️ Databases:** A mix of PostgreSQL for transactional data and MongoDB for semi-structured data (notifications, chat logs).
+-   **⚙️ Backend Microservices:** A suite of independent [Spring Boot](https://spring.io/projects/spring-boot) services, each with its own dedicated PostgreSQL database, handling specific business domains
+-   **🗄️ Databases:** A mix of [PostgreSQL](https://www.postgresql.org/) for transactional data and [MongoDB](https://www.mongodb.com/) for semi-structured data like notifications and chat logs.
 
 For a complete architectural overview, please see the `EAD TechTorque.pdf` design document.
 
 ## 🚀 Getting Started: The All-in-One Development Environment
 
-The entire TechTorque ecosystem is orchestrated using Docker Compose. This allows any developer to build and run all 11+ containers with a single command.
+The entire TechTorque ecosystem is orchestrated using Docker Compose. This allows any developer to build and run all containers with a single command.
 
-### Prerequisites
+### ✅ Prerequisites
 
 -   [Docker](https://www.docker.com/get-started) & [Docker Compose](https://docs.docker.com/compose/install/)
 -   A Java 17+ JDK
 -   Node.js & npm
+-   Go Language
 
-### Running the Full System
+### ▶️ Running the Full System
 
 1.  **Clone this repository.**
 2.  **Navigate to the project root** (where this `README.md` and `docker-compose.yml` are located).
@@ -48,7 +72,7 @@ The entire TechTorque ecosystem is orchestrated using Docker Compose. This allow
     ```
 This command will build, create, and start all containers.
 
-### ઍ Accessing the System
+###  Accessing the System
 
 -   **API Gateway:** `http://localhost:8080`
 -   **Frontend Application:** `http://localhost:3000` (after running `npm run dev` in the `Frontend_Web` directory)
@@ -56,4 +80,7 @@ This command will build, create, and start all containers.
 
 ## 🧩 Repository Structure
 
-Each major component resides in its own top-level directory. Please refer to the `README.md` file within each directory for specific details.
+Each major component of the system resides in its own top-level directory. Please refer to the `README.md` file within each directory for specific details about that service.
+
+---
+© 2025 TechTorque
