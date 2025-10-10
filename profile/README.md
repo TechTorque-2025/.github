@@ -1,6 +1,4 @@
-<p align="center">
-  ![Logo](Logo.png)
-</p>
+![Logo](Logo.png)
 
 <h1 align="center">TechTorque 2025</h1>
 
