@@ -6,7 +6,9 @@
 
 ![Project Status](https://img.shields.io/badge/Project%20Status-PRODUCTION%20READY-brightgreen?style=for-the-badge) ![Version](https://img.shields.io/badge/Version-v1.0%20(100%25%20Complete)-brightgreen?style=for-the-badge) ![Assignment](https://img.shields.io/badge/Assignment-Enterprise%20Application%20Development-lightgrey?style=for-the-badge)
 
-**Deployment Link:** https://techtorque.randitha.net
+**Deployment Link:** [https://techtorque.randitha.net](https://techtorque.randitha.net)
+
+**Last updated:** 2025-11-15
 
 ---
 
@@ -56,6 +58,12 @@
 **Time to Production:** Immediate (with optional 2-3 weeks for enhancements)
 
 ---
+
+### Release Notes (summary)
+
+- Release date: 2025-11-15
+- All core microservices are implemented and tested. The team verified endpoints and seeders.
+- Known outstanding items: AI Chatbot and WebSocket (planned/bonus features).
 
 ## Build status for the main repositories
 
@@ -135,6 +143,11 @@ docker-compose up --build -d
 
 This command will build, create, and start all containers.
 
+### Development notes
+
+- Use environment overrides in `k8s-config` and `docker-compose.override.yml` for local secrets. Avoid committing secrets to the repository.
+- The `docker-compose watch` task is a development helper; it enables hot reload for code changes in the local environment. If you don't have it, use `docker-compose up --build -d`.
+
 ### Accessing the System
 
 - **API Gateway:** `http://localhost:8080`
@@ -146,6 +159,7 @@ This command will build, create, and start all containers.
 Each major component of the system resides in its own top-level directory. Please refer to the `README.md` file within each directory for specific details about that service.
 
 ### Service Completion Status
+
 | Service | Port | Endpoints | Status |
 |---------|------|-----------|--------|
 | 🔐 **Authentication** | 8081 | 26/26 (100%) | ✅ Complete |
@@ -167,14 +181,14 @@ All 8 services have complete OpenAPI 3.0 documentation accessible via Swagger UI
 
 | Service | Swagger UI URL |
 |---------|----------------|
-| Authentication | http://localhost:8081/swagger-ui/index.html |
-| Vehicle | http://localhost:8082/swagger-ui/index.html |
-| Appointment | http://localhost:8083/swagger-ui/index.html |
-| Project/Service | http://localhost:8084/swagger-ui/index.html |
-| Time Logging | http://localhost:8085/swagger-ui/index.html |
-| Payment | http://localhost:8086/swagger-ui/index.html |
-| Admin | http://localhost:8087/swagger-ui/index.html |
-| Notification | http://localhost:8088/swagger-ui/index.html |
+| Authentication | [http://localhost:8081/swagger-ui/index.html](http://localhost:8081/swagger-ui/index.html) |
+| Vehicle | [http://localhost:8082/swagger-ui/index.html](http://localhost:8082/swagger-ui/index.html) |
+| Appointment | [http://localhost:8083/swagger-ui/index.html](http://localhost:8083/swagger-ui/index.html) |
+| Project/Service | [http://localhost:8084/swagger-ui/index.html](http://localhost:8084/swagger-ui/index.html) |
+| Time Logging | [http://localhost:8085/swagger-ui/index.html](http://localhost:8085/swagger-ui/index.html) |
+| Payment | [http://localhost:8086/swagger-ui/index.html](http://localhost:8086/swagger-ui/index.html) |
+| Admin | [http://localhost:8087/swagger-ui/index.html](http://localhost:8087/swagger-ui/index.html) |
+| Notification | [http://localhost:8088/swagger-ui/index.html](http://localhost:8088/swagger-ui/index.html) |
 
 ## 🧑‍💻 Development Team
 
@@ -191,6 +205,13 @@ All 8 services have complete OpenAPI 3.0 documentation accessible via Swagger UI
 | Rothila | Full Stack Developer / Frontend Designer | [mehara-rothila](https://github.com/mehara-rothila) |
 | Dinith | Full Stack Developer | [DinithEdirisinghe](https://github.com/DinithEdirisinghe) |
 
+### Contribution & PR flow
+
+- Branching policy: use `dev` for work in progress and create feature branches named `feature/<ticket-number>-short-description`.
+- Create a draft PR early for design discussions; add tests for new features and link related issues.
+- CI: tests run on GitHub Actions. Ensure the relevant `buildtest.yaml` passes locally before opening a PR.
+- Deploys are managed via ArgoCD. Use `GITOPS_PIPELINE_COMPLETE.md` for promotion steps.
+
 ---
 
 ---
@@ -200,35 +221,51 @@ All 8 services have complete OpenAPI 3.0 documentation accessible via Swagger UI
 ### Optional Enhancements (2-3 Weeks)
 
 **Priority 1: Testing & Monitoring** (1 week)
+
 - Add comprehensive unit tests
+
 - Integration tests for workflows
+
 - Set up monitoring & alerting
+
 - Performance testing
 
 **Priority 2: Security Hardening** (1 week)
+
 - Externalize secrets to environment variables
+
 - HTTPS/TLS configuration
+
 - Security audit & penetration testing
+
 - Add rate limiting per user
 
 **Priority 3: DevOps & CI/CD** (1 week)
+
 - Set up GitHub Actions CI/CD pipeline
+
 - Automated deployment scripts
+
 - Backup & disaster recovery
+
 - Production environment setup
 
 ### Long-term Roadmap
 
 **Phase 1: Advanced Features** (4-6 weeks)
+
 - WebSocket for real-time updates
 - Advanced analytics dashboard
 - 2FA/MFA support
 - Mobile app backend
 
 **Phase 2: AI Integration** (6-8 weeks)
+
 - AI Chatbot service
 - Natural language appointment booking
 - Predictive maintenance alerts
+
+Note: AI Chatbot is a planned/bonus feature and is NOT IMPLEMENTED yet — see `ENDPOINT_IMPLEMENTATION_REPORT.md` and `PROJECT_RE_EVALUATION_2025.md` for status and timelining.
 
 ---
 
@@ -243,12 +280,14 @@ Average per Service:         280+ lines
 ```
 
 ### Compilation Times
+
 - Fastest: Notification (1.2s)
 - Slowest: Admin (2.0s)
 - Average: 1.7s per service
 - Total build time: ~13.5s
 
 ### Top 5 Most Complex Services
+
 1. AppointmentServiceImpl - 524 lines
 2. BillingServiceImpl - 476 lines
 3. TimeLogService - 401 lines
@@ -275,23 +314,29 @@ curl http://localhost:8080/health
 
 ### Access Services
 
-- **API Gateway:** http://localhost:8080
-- **Frontend:** http://localhost:3000
-- **Authentication API:** http://localhost:8081/swagger-ui/index.html
-- **Other Services:** http://localhost:808X/swagger-ui/index.html (where X is service number)
+- **API Gateway:** [http://localhost:8080](http://localhost:8080)
+- **Frontend:** [http://localhost:3000](http://localhost:3000)
+- **Authentication API:** [http://localhost:8081/swagger-ui/index.html](http://localhost:8081/swagger-ui/index.html)
+- **Other Services:** [http://localhost:808X/swagger-ui/index.html](http://localhost:808X/swagger-ui/index.html) (where X is service number)
 
 ### Test Credentials (Development)
 
 **Super Admin:**
+
 - Username: `superadmin`
+
 - Password: `admin123`
 
 **Employee:**
+
 - Username: `employee1`
+
 - Password: `employee123`
 
 **Customer:**
+
 - Username: `customer`
+
 - Password: `customer123`
 
 ---
@@ -307,14 +352,15 @@ curl http://localhost:8080/health
 ### API Documentation (Swagger/OpenAPI)
 
 All services have interactive API documentation:
-- Authentication: http://localhost:8081/swagger-ui/index.html
-- Vehicle: http://localhost:8082/swagger-ui/index.html
-- Appointment: http://localhost:8083/swagger-ui/index.html
-- Project/Service: http://localhost:8084/swagger-ui/index.html
-- Time Logging: http://localhost:8085/swagger-ui/index.html
-- Payment: http://localhost:8086/swagger-ui/index.html
-- Admin: http://localhost:8087/swagger-ui/index.html
-- Notification: http://localhost:8088/swagger-ui/index.html
+
+- Authentication: [http://localhost:8081/swagger-ui/index.html](http://localhost:8081/swagger-ui/index.html)
+- Vehicle: [http://localhost:8082/swagger-ui/index.html](http://localhost:8082/swagger-ui/index.html)
+- Appointment: [http://localhost:8083/swagger-ui/index.html](http://localhost:8083/swagger-ui/index.html)
+- Project/Service: [http://localhost:8084/swagger-ui/index.html](http://localhost:8084/swagger-ui/index.html)
+- Time Logging: [http://localhost:8085/swagger-ui/index.html](http://localhost:8085/swagger-ui/index.html)
+- Payment: [http://localhost:8086/swagger-ui/index.html](http://localhost:8086/swagger-ui/index.html)
+- Admin: [http://localhost:8087/swagger-ui/index.html](http://localhost:8087/swagger-ui/index.html)
+- Notification: [http://localhost:8088/swagger-ui/index.html](http://localhost:8088/swagger-ui/index.html)
 
 ---
 © 2025 TechTorque
