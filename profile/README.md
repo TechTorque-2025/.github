@@ -67,23 +67,29 @@
 
 ## Build status for the main repositories
 
-[![Build and Test Vehicle Service](https://github.com/TechTorque-2025/Vehicle_Service/actions/workflows/buildtest.yaml/badge.svg)](https://github.com/TechTorque-2025/Vehicle_Service/actions/workflows/buildtest.yaml)
+[![Build and Push Docker Image](https://github.com/TechTorque-2025/Agent_Bot/actions/workflows/build.yaml/badge.svg)](https://github.com/TechTorque-2025/Agent_Bot/actions/workflows/build.yaml)
 
-[![Build and Test Time Logging Service](https://github.com/TechTorque-2025/Time_Logging_Service/actions/workflows/buildtest.yaml/badge.svg)](https://github.com/TechTorque-2025/Time_Logging_Service/actions/workflows/buildtest.yaml)
+[![Build and Push Docker Image](https://github.com/TechTorque-2025/Frontend_Web/actions/workflows/build.yaml/badge.svg)](https://github.com/TechTorque-2025/Frontend_Web/actions/workflows/build.yaml)
 
-[![Build and Test Project Service](https://github.com/TechTorque-2025/Project_Service/actions/workflows/buildtest.yaml/badge.svg)](https://github.com/TechTorque-2025/Project_Service/actions/workflows/buildtest.yaml)
+[![Build and Push Docker Image](https://github.com/TechTorque-2025/Notification_Service/actions/workflows/build.yaml/badge.svg)](https://github.com/TechTorque-2025/Notification_Service/actions/workflows/build.yaml)
 
-[![Build and Test Payment Service](https://github.com/TechTorque-2025/Payment_Service/actions/workflows/buildtest.yaml/badge.svg)](https://github.com/TechTorque-2025/Payment_Service/actions/workflows/buildtest.yaml)
+[![Build and Push Docker Image](https://github.com/TechTorque-2025/API_Gateway/actions/workflows/build.yaml/badge.svg)](https://github.com/TechTorque-2025/API_Gateway/actions/workflows/build.yaml)
 
-[![Build and Test Authentication Service](https://github.com/TechTorque-2025/Authentication/actions/workflows/buildtest.yaml/badge.svg)](https://github.com/TechTorque-2025/Authentication/actions/workflows/buildtest.yaml)
+[![Build and Push Docker Image](https://github.com/TechTorque-2025/Payment_Service/actions/workflows/build.yaml/badge.svg)](https://github.com/TechTorque-2025/Payment_Service/actions/workflows/build.yaml)
 
-[![Build and Test Appointment Service](https://github.com/TechTorque-2025/Appointment_Service/actions/workflows/buildtest.yaml/badge.svg)](https://github.com/TechTorque-2025/Appointment_Service/actions/workflows/buildtest.yaml)
 
-[![Build and Test Admin Service](https://github.com/TechTorque-2025/Admin_Service/actions/workflows/buildtest.yaml/badge.svg)](https://github.com/TechTorque-2025/Admin_Service/actions/workflows/buildtest.yaml)
+[![Build and Push Docker Image](https://github.com/TechTorque-2025/Authentication/actions/workflows/build.yaml/badge.svg)](https://github.com/TechTorque-2025/Authentication/actions/workflows/build.yaml)
 
-[![Build and Test API Gateway](https://github.com/TechTorque-2025/API_Gateway/actions/workflows/buildtest.yaml/badge.svg)](https://github.com/TechTorque-2025/API_Gateway/actions/workflows/buildtest.yaml)
 
-[![Build and Test Frontend_Web](https://github.com/TechTorque-2025/Frontend_Web/actions/workflows/buildtest.yaml/badge.svg)](https://github.com/TechTorque-2025/Frontend_Web/actions/workflows/buildtest.yaml)
+[![Build and Push Docker Image](https://github.com/TechTorque-2025/Project_Service/actions/workflows/build.yaml/badge.svg)](https://github.com/TechTorque-2025/Project_Service/actions/workflows/build.yaml)
+
+[![Build and Push Docker Image](https://github.com/TechTorque-2025/Time_Logging_Service/actions/workflows/build.yaml/badge.svg)](https://github.com/TechTorque-2025/Time_Logging_Service/actions/workflows/build.yaml)
+
+[![Build and Push Docker Image](https://github.com/TechTorque-2025/Appointment_Service/actions/workflows/build.yaml/badge.svg)](https://github.com/TechTorque-2025/Appointment_Service/actions/workflows/build.yaml)
+
+[![Build and Push Docker Image](https://github.com/TechTorque-2025/Vehicle_Service/actions/workflows/build.yaml/badge.svg)](https://github.com/TechTorque-2025/Vehicle_Service/actions/workflows/build.yaml)
+
+[![Build and Push Docker Image](https://github.com/TechTorque-2025/Admin_Service/actions/workflows/build.yaml/badge.svg)](https://github.com/TechTorque-2025/Admin_Service/actions/workflows/build.yaml)
 
 ---
 
@@ -91,7 +97,9 @@
 
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white) ![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white) ![Next.js](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/) [![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/) [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/) [![K3s](https://img.shields.io/badge/K3s-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)](https://k3s.io/)
+
+[![Argo CD](https://img.shields.io/badge/Argo%20CD-4CC7F6?style=for-the-badge&logo=argocd&logoColor=white)](https://argo-cd.readthedocs.io/en/stable/) [![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)](https://github.com/features/actions) [![Pinecone](https://img.shields.io/badge/Pinecone-12B6B0?style=for-the-badge&logo=pinecone&logoColor=white)](https://www.pinecone.io/)
 
 ---
 
@@ -109,6 +117,8 @@ The project is built on a **polyglot microservices architecture**. This design p
 - **🌐 API Gateway:** A single entry point written in Go, responsible for routing, authentication (JWT validation), and rate limiting.
 - **⚙️ Backend Microservices:** A suite of independent [Spring Boot](https://spring.io/projects/spring-boot) services, each with its own dedicated PostgreSQL database, handling specific business domains.
 - **🗄️ Databases:** A mix of [PostgreSQL](https://www.postgresql.org/) for transactional data and [MongoDB](https://www.mongodb.com/) for semi-structured data like notifications and chat logs.
+
+> ⚠️ Note: this project deploys to a lightweight Kubernetes distribution — **k3s** — in development and staging. The `k8s-config` repository contains manifests compatible with k3s. See `KUBERNETES_SETUP.md` and `ARGOCD_SETUP_SUMMARY.md` for details on k3s and ArgoCD setup.
 
 For a complete architectural overview, please see the `EAD TechTorque.pdf` design document.
 
