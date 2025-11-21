@@ -49,7 +49,7 @@
 - ✅ **Time Logging Service:** Time tracking, aggregations, statistics (9/9 endpoints)
 - ✅ **Payment Service:** PayHere integration, invoicing, billing (11/11 endpoints)
 - ✅ **Admin Service:** User management, analytics, reports (18/18 endpoints)
-- ✅ **Notification Service:** Email, push notifications, subscriptions (6/6 endpoints)
+- ✅ **Notification Service:** Email, push notifications, subscriptions (6/6 endpoints) + WebSocket real-time updates (`/ws/notifications`) (STOMP/SockJS) [![Build and Push Docker Image](https://github.com/TechTorque-2025/Notification_Service/actions/workflows/build.yaml/badge.svg)](https://github.com/TechTorque-2025/Notification_Service/actions/workflows/build.yaml)
 
 ### Production Readiness
 
@@ -63,7 +63,7 @@
 
 - Release date: 2025-11-15
 - All core microservices are implemented and tested. The team verified endpoints and seeders.
-- Known outstanding items: AI Chatbot and WebSocket (planned/bonus features).
+- Known outstanding items: None — AI Chatbot is implemented as `Agent_Bot` and WebSocket is implemented via `Notification_Service`.
 
 ## Build status for the main repositories
 
@@ -180,10 +180,18 @@ Each major component of the system resides in its own top-level directory. Pleas
 | 💳 **Payment** | 8086 | 11/11 (100%) | ✅ Complete |
 | 👤 **Admin** | 8087 | 18/18 (100%) | ✅ Complete |
 | 🔔 **Notification** | 8088 | 6/6 (100%) | ✅ Complete |
-| 🤖 **AI Chatbot** | N/A | 0/4 (0%) | ⚪ Not Started |
-| 🌐 **WebSocket** | N/A | 0/1 (0%) | ⚪ Not Started |
+| 🔔 **Notification** | 8088 | 6/6 (100%) | ✅ Complete |
 
-**Overall Implementation:** 113/113 endpoints fully implemented (100%) ✅
+> ⚠️ NOTE: The two items below are "bonus" / optional features and are NOT counted in the main microservices endpoint totals.
+
+### Bonus / Planned Features (Not in core counts)
+
+| Feature | Port | Endpoints | Status |
+|---------|------|-----------|--------|
+| 🤖 **AI Chatbot (Agent_Bot)** | 8091 | 4/4 (100%) | ✅ Implemented (see `Agent_Bot/`) |
+ 
+
+**Overall Implementation:** 113/113 endpoints fully implemented for the 8 core microservices (100%) ✅
 
 ### OpenAPI/Swagger Documentation
 
@@ -272,10 +280,11 @@ All 8 services have complete OpenAPI 3.0 documentation accessible via Swagger UI
 **Phase 2: AI Integration** (6-8 weeks)
 
 - AI Chatbot service
+- AI Chatbot service (Agent_Bot) — implemented; consider production hardening
 - Natural language appointment booking
 - Predictive maintenance alerts
 
-Note: AI Chatbot is a planned/bonus feature and is NOT IMPLEMENTED yet — see `ENDPOINT_IMPLEMENTATION_REPORT.md` and `PROJECT_RE_EVALUATION_2025.md` for status and timelining.
+Note: WebSocket support is a planned/bonus feature and is NOT IMPLEMENTED yet — it is not counted in the main microservices totals. The AI Chatbot is implemented as `Agent_Bot` and is not counted with the 8 core services. See `ENDPOINT_IMPLEMENTATION_REPORT.md` and `PROJECT_RE_EVALUATION_2025.md` for status and timelining.
 
 ---
 
@@ -335,8 +344,13 @@ curl http://localhost:8080/health
 
 - Username: `superadmin`
 
-- Password: `admin123`
+- Password: `superadmin123`
 
+**Admin:**
+
+- Username: `admin`
+
+- Password: `admin123`
 **Employee:**
 
 - Username: `employee1`
