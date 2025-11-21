@@ -195,7 +195,7 @@ Each major component of the system resides in its own top-level directory. Pleas
 
 ### OpenAPI/Swagger Documentation
 
-All 8 services have complete OpenAPI 3.0 documentation accessible via Swagger UI:
+All 8 core microservices have complete OpenAPI 3.0 documentation accessible via Swagger UI; additionally, the `Agent_Bot` (AI) uses FastAPI docs at `/docs`.
 
 | Service | Swagger UI URL |
 |---------|----------------|
@@ -207,6 +207,7 @@ All 8 services have complete OpenAPI 3.0 documentation accessible via Swagger UI
 | Payment | [http://localhost:8086/swagger-ui/index.html](http://localhost:8086/swagger-ui/index.html) |
 | Admin | [http://localhost:8087/swagger-ui/index.html](http://localhost:8087/swagger-ui/index.html) |
 | Notification | [http://localhost:8088/swagger-ui/index.html](http://localhost:8088/swagger-ui/index.html) |
+| Agent_Bot (AI) | [http://localhost:8091/docs](http://localhost:8091/docs) |
 
 ## 🧑‍💻 Development Team
 
@@ -336,6 +337,7 @@ curl http://localhost:8080/health
 - **API Gateway:** [http://localhost:8080](http://localhost:8080)
 - **Frontend:** [http://localhost:3000](http://localhost:3000)
 - **Authentication API:** [http://localhost:8081/swagger-ui/index.html](http://localhost:8081/swagger-ui/index.html)
+ - **Agent Bot (AI):** [http://localhost:8091/docs](http://localhost:8091/docs)
 - **Other Services:** [http://localhost:808X/swagger-ui/index.html](http://localhost:808X/swagger-ui/index.html) (where X is service number)
 
 ### Test Credentials (Development)
