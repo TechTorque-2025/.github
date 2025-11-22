@@ -49,7 +49,7 @@
 - ✅ **Time Logging Service:** Time tracking, aggregations, statistics (9/9 endpoints)
 - ✅ **Payment Service:** PayHere integration, invoicing, billing (11/11 endpoints)
 - ✅ **Admin Service:** User management, analytics, reports (18/18 endpoints)
-- ✅ **Notification Service:** Email, push notifications, subscriptions (6/6 endpoints) + WebSocket real-time updates (`/ws/notifications`) (STOMP/SockJS) [![Build and Push Docker Image](https://github.com/TechTorque-2025/Notification_Service/actions/workflows/build.yaml/badge.svg)](https://github.com/TechTorque-2025/Notification_Service/actions/workflows/build.yaml)
+- ✅ **Notification Service:** Email, push notifications, subscriptions (6/6 endpoints) + WebSocket real-time updates (`/ws/notifications`) (STOMP/SockJS) 
 
 ### Production Readiness
 
@@ -66,40 +66,37 @@
 - Known outstanding items: None — AI Chatbot is implemented as `Agent_Bot` and WebSocket is implemented via `Notification_Service`.
 
 ## Build status for the main repositories
-
-[![Build and Push Docker Image](https://github.com/TechTorque-2025/Agent_Bot/actions/workflows/build.yaml/badge.svg)](https://github.com/TechTorque-2025/Agent_Bot/actions/workflows/build.yaml)
-
-[![Build and Push Docker Image](https://github.com/TechTorque-2025/Frontend_Web/actions/workflows/build.yaml/badge.svg)](https://github.com/TechTorque-2025/Frontend_Web/actions/workflows/build.yaml)
-
-[![Build and Push Docker Image](https://github.com/TechTorque-2025/Notification_Service/actions/workflows/build.yaml/badge.svg)](https://github.com/TechTorque-2025/Notification_Service/actions/workflows/build.yaml)
-
-[![Build and Push Docker Image](https://github.com/TechTorque-2025/API_Gateway/actions/workflows/build.yaml/badge.svg)](https://github.com/TechTorque-2025/API_Gateway/actions/workflows/build.yaml)
-
-[![Build and Push Docker Image](https://github.com/TechTorque-2025/Payment_Service/actions/workflows/build.yaml/badge.svg)](https://github.com/TechTorque-2025/Payment_Service/actions/workflows/build.yaml)
-
-
-[![Build and Push Docker Image](https://github.com/TechTorque-2025/Authentication/actions/workflows/build.yaml/badge.svg)](https://github.com/TechTorque-2025/Authentication/actions/workflows/build.yaml)
-
-
-[![Build and Push Docker Image](https://github.com/TechTorque-2025/Project_Service/actions/workflows/build.yaml/badge.svg)](https://github.com/TechTorque-2025/Project_Service/actions/workflows/build.yaml)
-
-[![Build and Push Docker Image](https://github.com/TechTorque-2025/Time_Logging_Service/actions/workflows/build.yaml/badge.svg)](https://github.com/TechTorque-2025/Time_Logging_Service/actions/workflows/build.yaml)
-
-[![Build and Push Docker Image](https://github.com/TechTorque-2025/Appointment_Service/actions/workflows/build.yaml/badge.svg)](https://github.com/TechTorque-2025/Appointment_Service/actions/workflows/build.yaml)
-
-[![Build and Push Docker Image](https://github.com/TechTorque-2025/Vehicle_Service/actions/workflows/build.yaml/badge.svg)](https://github.com/TechTorque-2025/Vehicle_Service/actions/workflows/build.yaml)
-
-[![Build and Push Docker Image](https://github.com/TechTorque-2025/Admin_Service/actions/workflows/build.yaml/badge.svg)](https://github.com/TechTorque-2025/Admin_Service/actions/workflows/build.yaml)
-
+| Service | Build & Push Docker Image |
+|---|---|
+| Frontend Web | [![Build and Push Docker Image](https://github.com/TechTorque-2025/Frontend_Web/actions/workflows/build.yaml/badge.svg)](https://github.com/TechTorque-2025/Frontend_Web/actions/workflows/build.yaml) |
+| Notification_Service | [![Build and Push Docker Image](https://github.com/TechTorque-2025/Notification_Service/actions/workflows/build.yaml/badge.svg)](https://github.com/TechTorque-2025/Notification_Service/actions/workflows/build.yaml) |
+| API Gateway | [![Build and Push Docker Image](https://github.com/TechTorque-2025/API_Gateway/actions/workflows/build.yaml/badge.svg)](https://github.com/TechTorque-2025/API_Gateway/actions/workflows/build.yaml) |
+| Payment Service | [![Build and Push Docker Image](https://github.com/TechTorque-2025/Payment_Service/actions/workflows/build.yaml/badge.svg)](https://github.com/TechTorque-2025/Payment_Service/actions/workflows/build.yaml) |
+| Authentication | [![Build and Push Docker Image](https://github.com/TechTorque-2025/Authentication/actions/workflows/build.yaml/badge.svg)](https://github.com/TechTorque-2025/Authentication/actions/workflows/build.yaml) |
+| Project Service | [![Build and Push Docker Image](https://github.com/TechTorque-2025/Project_Service/actions/workflows/build.yaml/badge.svg)](https://github.com/TechTorque-2025/Project_Service/actions/workflows/build.yaml) |
+| Time Logging Service | [![Build and Push Docker Image](https://github.com/TechTorque-2025/Time_Logging_Service/actions/workflows/build.yaml/badge.svg)](https://github.com/TechTorque-2025/Time_Logging_Service/actions/workflows/build.yaml) |
+| Appointment Service | [![Build and Push Docker Image](https://github.com/TechTorque-2025/Appointment_Service/actions/workflows/build.yaml/badge.svg)](https://github.com/TechTorque-2025/Appointment_Service/actions/workflows/build.yaml) |
+| Vehicle Service | [![Build and Push Docker Image](https://github.com/TechTorque-2025/Vehicle_Service/actions/workflows/build.yaml/badge.svg)](https://github.com/TechTorque-2025/Vehicle_Service/actions/workflows/build.yaml) |
+| Admin Service | [![Build and Push Docker Image](https://github.com/TechTorque-2025/Admin_Service/actions/workflows/build.yaml/badge.svg)](https://github.com/TechTorque-2025/Admin_Service/actions/workflows/build.yaml) |
+| Agent Bot | [![Build and Push Docker Image](https://github.com/TechTorque-2025/Agent_Bot/actions/workflows/build.yaml/badge.svg)](https://github.com/TechTorque-2025/Agent_Bot/actions/workflows/build.yaml) |
 ---
 
 ## Technology Stack
 
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white) ![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white) ![Next.js](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+[![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)](https://spring.io/projects/spring-boot) 
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/) 
+[![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white)](https://go.dev/) 
+[![Next.js](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/) 
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/) [![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/) [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/) [![K3s](https://img.shields.io/badge/K3s-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)](https://k3s.io/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/) 
+[![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/) 
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/) 
+[![K3s](https://img.shields.io/badge/K3s-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)](https://k3s.io/)
 
-[![Argo CD](https://img.shields.io/badge/Argo%20CD-4CC7F6?style=for-the-badge&logo=argocd&logoColor=white)](https://argo-cd.readthedocs.io/en/stable/) [![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)](https://github.com/features/actions) [![Pinecone](https://img.shields.io/badge/Pinecone-12B6B0?style=for-the-badge&logo=pinecone&logoColor=white)](https://www.pinecone.io/)
+[![Argo CD](https://img.shields.io/badge/Argo%20CD-4CC7F6?style=for-the-badge&logo=argocd&logoColor=white)](https://argo-cd.readthedocs.io/en/stable/) 
+[![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)](https://github.com/features/actions) 
+[![Pinecone](https://img.shields.io/badge/Pinecone-12B6B0?style=for-the-badge&logo=pinecone&logoColor=white)](https://www.pinecone.io/)
 
 ---
 
