@@ -6,7 +6,6 @@
 
 ![Project Status](https://img.shields.io/badge/Project%20Status-COMPLETED%20%26%20ARCHIVED-orange?style=for-the-badge) ![Version](https://img.shields.io/badge/Version-v1.0%20(Final)-brightgreen?style=for-the-badge) ![Assignment](https://img.shields.io/badge/Assignment-Enterprise%20Application%20Development-lightgrey?style=for-the-badge)
 
-**Deployment Link:** [https://techtorque.randitha.net](https://techtorque.randitha.net)
 
 ---
 
