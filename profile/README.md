@@ -354,6 +354,7 @@ curl http://localhost:8080/health
 - Username: `admin`
 
 - Password: `admin123`
+
 **Employee:**
 
 - Username: `employee1`
