@@ -213,14 +213,14 @@ All 8 core microservices have complete OpenAPI 3.0 documentation accessible via 
 | Name | Role | GitHub |
 |---|---:|---|
 | Randitha (B.H.A.R. Kulasekera) | Group Leader / Project Architect / Full Stack Developer / DevOps | [RandithaK](https://github.com/RandithaK) |
-| Suweka | Full Stack Developer | [Suweka](https://github.com/Suweka) |
-| Akith | Full Stack Developer | [Akith-002](https://github.com/Akith-002) |
-| Pramudi | Full Stack Developer | [Pramudi02](https://github.com/Pramudi02) |
-| Aditha | Full Stack Developer | [AdithaBuwaneka](https://github.com/AdithaBuwaneka) |
+| Suweka | Full Stack Developer / Quality Assurance | [Suweka](https://github.com/Suweka) |
+| Akith | Full Stack Developer / Quality Assurance | [Akith-002](https://github.com/Akith-002) |
+| Pramudi | Full Stack Developer / Frontend Designer | [Pramudi02](https://github.com/Pramudi02) |
+| Aditha | Full Stack Developer / AI Chatbot Developer | [AdithaBuwaneka](https://github.com/AdithaBuwaneka) |
 | Chamodi | Full Stack Developer | [ChamodiSandunika](https://github.com/ChamodiSandunika) |
 | Dhanuja | Full Stack Developer / Project Manager | [Dhanuja416](https://github.com/Dhanuja416) |
-| Mahesh | Full Stack Developer | [TharinduMahesh](https://github.com/TharinduMahesh) |
-| Rothila | Full Stack Developer / Frontend Designer | [mehara-rothila](https://github.com/mehara-rothila) |
+| Mahesh | Full Stack Developer / AI Chatbot Developer | [TharinduMahesh](https://github.com/TharinduMahesh) |
+| Rothila | Full Stack Developer / Frontend Designer / Payment Integration Developer | [mehara-rothila](https://github.com/mehara-rothila) |
 | Dinith | Full Stack Developer | [DinithEdirisinghe](https://github.com/DinithEdirisinghe) |
 
 ### Contribution & PR flow
